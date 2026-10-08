@@ -161,3 +161,228 @@
     @apply bg-background text-foreground;
   }
 }
+
+.liquid-cinema {
+  background-image:
+    radial-gradient(ellipse at 12% 0%, rgb(255 196 0 / 9%), transparent 36rem),
+    radial-gradient(ellipse at 88% 28%, rgb(255 255 255 / 4%), transparent 34rem);
+  background-attachment: fixed;
+}
+
+.liquid-cinema > header {
+  background: rgb(15 15 15 / 66%);
+  border-color: rgb(255 255 255 / 12%);
+  box-shadow: 0 8px 32px rgb(0 0 0 / 22%);
+  -webkit-backdrop-filter: blur(24px) saturate(150%);
+  backdrop-filter: blur(24px) saturate(150%);
+}
+
+.liquid-cinema article,
+.liquid-cinema section div[class*="rounded-2xl"][class*="border"],
+.liquid-cinema section div[class*="rounded-xl"][class*="border"],
+.liquid-cinema section a[aria-label="Ouvrir la page dédiée au QR code"] {
+  border-color: rgb(255 255 255 / 13%);
+  background-color: rgb(255 255 255 / 5%);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 9%),
+    0 12px 36px rgb(0 0 0 / 18%);
+  -webkit-backdrop-filter: blur(18px) saturate(145%);
+  backdrop-filter: blur(18px) saturate(145%);
+}
+
+.liquid-cinema article:hover,
+.liquid-cinema section a[aria-label="Ouvrir la page dédiée au QR code"]:hover {
+  border-color: rgb(255 196 0 / 38%);
+  background-color: rgb(255 255 255 / 7%);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 12%),
+    0 18px 46px rgb(0 0 0 / 25%),
+    0 0 24px rgb(255 196 0 / 7%);
+}
+
+.liquid-cinema section[class*="max-w-md"] {
+  border-color: rgb(255 255 255 / 16%);
+  background: rgb(255 255 255 / 6%);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 12%),
+    0 24px 80px rgb(0 0 0 / 35%);
+  -webkit-backdrop-filter: blur(24px) saturate(150%);
+  backdrop-filter: blur(24px) saturate(150%);
+}
+
+.liquid-cinema button {
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+.liquid-cinema button:focus-visible,
+.liquid-cinema a:focus-visible {
+  outline: 2px solid #ffc400;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .liquid-cinema > header,
+  .liquid-cinema article,
+  .liquid-cinema section div[class*="rounded-2xl"][class*="border"],
+  .liquid-cinema section div[class*="rounded-xl"][class*="border"],
+  .liquid-cinema section a[aria-label="Ouvrir la page dédiée au QR code"],
+  .liquid-cinema section[class*="max-w-md"] {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+
+.pathe-home.liquid-cinema {
+  background-color: #050505;
+  background-image:
+    radial-gradient(ellipse at 78% 12%, rgb(105 111 116 / 22%), transparent 36rem),
+    linear-gradient(180deg, #18191c 0, #080809 17rem, #050505 38rem);
+}
+
+.pathe-home > header {
+  background: rgb(25 26 29 / 94%);
+  border-color: rgb(255 255 255 / 8%);
+  box-shadow: 0 8px 28px rgb(0 0 0 / 28%);
+}
+
+.pathe-home .pathe-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-color: rgb(255 255 255 / 10%);
+  background:
+    linear-gradient(90deg, #070708 0%, rgb(7 7 8 / 96%) 28%, rgb(7 7 8 / 74%) 58%, rgb(7 7 8 / 42%) 100%),
+    radial-gradient(ellipse at 79% 42%, rgb(255 196 0 / 18%), transparent 28rem),
+    linear-gradient(135deg, #242529, #101113 70%);
+  box-shadow: inset 0 -1px 0 rgb(255 255 255 / 7%);
+}
+
+.pathe-home .pathe-hero::after {
+  position: absolute;
+  z-index: -1;
+  top: -9rem;
+  right: -5rem;
+  width: min(52vw, 46rem);
+  aspect-ratio: 1;
+  border: 1px solid rgb(255 255 255 / 7%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgb(255 255 255 / 8%), rgb(255 196 0 / 4%) 40%, transparent 70%);
+  content: "";
+  pointer-events: none;
+}
+
+.pathe-home .pathe-hero-title {
+  font-family: Impact, "Arial Narrow", sans-serif;
+  letter-spacing: 0.015em;
+  text-shadow: 0 4px 32px rgb(0 0 0 / 40%);
+}
+
+.pathe-home .pathe-qr-link {
+  flex-shrink: 0;
+  border-color: rgb(255 255 255 / 20%);
+  background: rgb(28 29 32 / 82%);
+  box-shadow: 0 8px 28px rgb(0 0 0 / 25%);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+.pathe-home .pathe-category {
+  border-radius: 0.45rem;
+  border-color: #343538;
+  background: #202124;
+  color: #d0d0d0;
+  font-weight: 600;
+}
+
+.pathe-home .pathe-category:hover {
+  border-color: #777;
+  background: #303135;
+  color: white;
+}
+
+.pathe-home .pathe-category-active,
+.pathe-home .pathe-category-active:hover {
+  border-color: #ffc400;
+  background: #ffc400;
+  color: #111;
+}
+
+.pathe-home .pathe-kicker {
+  color: #ffc400;
+}
+
+.pathe-home .pathe-section-title {
+  color: #f7f7f7;
+}
+
+.pathe-home .pathe-product-count {
+  color: #999;
+}
+
+.pathe-home .pathe-product-card {
+  border-color: #292a2c;
+  border-radius: 0.8rem;
+  background: #17181a;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 22%);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+.pathe-home .pathe-product-card:hover {
+  border-color: #55565a;
+  background: #1e1f22;
+  box-shadow: 0 14px 32px rgb(0 0 0 / 35%);
+}
+
+.pathe-home .pathe-product-card h2 {
+  color: #f7f7f7;
+}
+
+.pathe-home .pathe-product-card button,
+.pathe-home > section > button.fixed {
+  border-radius: 0.55rem;
+  background: #ffc400;
+  font-weight: 700;
+  box-shadow: 0 5px 18px rgb(255 196 0 / 12%);
+}
+
+.pathe-home .pathe-product-card button:hover,
+.pathe-home > section > button.fixed:hover {
+  background: #ffd23f;
+  box-shadow: 0 8px 24px rgb(255 196 0 / 20%);
+}
+
+.pathe-qr-page.liquid-cinema {
+  background-color: #050505;
+  background-image: radial-gradient(ellipse at 50% 12%, rgb(255 196 0 / 9%), transparent 34rem);
+}
+
+.pathe-qr-page .pathe-qr-brand {
+  color: white;
+}
+
+.pathe-qr-page .pathe-qr-card {
+  border-color: #343538;
+  border-radius: 1rem;
+  background: #17181a;
+  box-shadow: 0 24px 70px rgb(0 0 0 / 45%);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+@media (max-width: 640px) {
+  .pathe-home .pathe-hero {
+    min-height: 0;
+    background:
+      linear-gradient(90deg, rgb(7 7 8 / 97%), rgb(7 7 8 / 78%)),
+      radial-gradient(ellipse at 85% 18%, rgb(255 196 0 / 15%), transparent 22rem),
+      #101113;
+  }
+
+  .pathe-home .pathe-hero::after {
+    top: -6rem;
+    right: -11rem;
+    width: 28rem;
+  }
+}

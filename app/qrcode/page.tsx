@@ -18,13 +18,13 @@ export default function QrCodePage() {
   }, [])
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-[#090a0c] px-5 py-12 text-white">
-      <a href="/" className="mb-10 flex items-center gap-3 transition-opacity hover:opacity-80">
+    <main className="liquid-cinema pathe-qr-page flex min-h-screen flex-col items-center justify-center bg-[#090a0c] px-5 py-12 text-white">
+      <a href="/" className="pathe-qr-brand mb-10 flex items-center gap-3 transition-opacity hover:opacity-80">
         <img src="/pathe-logo.webp" alt="Pathé" className="h-10 w-[60px] object-contain" />
         <span className="font-semibold tracking-tight">Pathé</span>
       </a>
 
-      <section className="w-full max-w-md rounded-3xl border border-white/10 bg-[#111317] p-7 text-center shadow-2xl sm:p-10">
+      <section className="pathe-qr-card w-full max-w-md rounded-3xl border border-white/10 bg-[#111317] p-7 text-center shadow-2xl sm:p-10">
         <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#ffc400]">Commande depuis votre siège</p>
         <h1 className="mt-3 text-3xl font-semibold tracking-tight">Scannez pour commander</h1>
         <p className="mx-auto mt-3 max-w-xs text-sm leading-6 text-white/55">
